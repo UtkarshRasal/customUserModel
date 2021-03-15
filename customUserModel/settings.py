@@ -29,6 +29,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 AUTH_USER_MODEL = 'accounts.User'
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -129,7 +130,7 @@ REST_FRAMEWORK = {
 }
 
 SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': datetime.timedelta(minutes=1),
+    'ACCESS_TOKEN_LIFETIME': datetime.timedelta(days=365),
     'REFRESH_TOKEN_LIFETIME': datetime.timedelta(days=1),
 }
 
